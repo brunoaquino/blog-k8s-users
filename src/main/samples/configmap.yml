@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: todo-users
+data:
+  application.yml: |-
+    spring.redis:
+      host: redis-todo-users.redis.svc.cluster.local
+      password: ${SPRING_REDIS_PASSWORD}
+    logging:
+      config: /opt/app/config/logback.xml
