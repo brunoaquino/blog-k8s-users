@@ -35,7 +35,7 @@
     </scm>
     <properties>
         <fabric8.maven.plugin.version>3.5.38</fabric8.maven.plugin.version>
-        <fabric8.spring.version>0.2.0.RELEASE</fabric8.spring.version>
+        <spring.cloud.kubernetes.version>0.2.0.RELEASE</spring.cloud.kubernetes.version>
         <spring-boot.version>1.5.10.RELEASE</spring-boot.version>
         <fabric8.helm.chart>todo-users</fabric8.helm.chart>
         <swagger.version>2.7.0</swagger.version>
@@ -80,13 +80,13 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-kubernetes</artifactId>
-            <version>${fabric8.spring.version}</version>
+            <version>${spring.cloud.kubernetes.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-kubernetes-config</artifactId>
-            <version>${fabric8.spring.version}</version>
+            <version>${spring.cloud.kubernetes.version}</version>
         </dependency>
 
         <dependency>
